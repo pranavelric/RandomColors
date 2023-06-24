@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ColorDetailVC.swift
 //  RandomColors
 //
 //  Created by Pranav Choudhary on 24/06/23.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ColorDetailVC: UIViewController {
+    var color: UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+        view.backgroundColor = color ?? .blue
 
+    }
+    
 
 }
-
